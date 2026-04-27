@@ -7,7 +7,7 @@
 - [ ] Clone respitories and save to MadPyLibs for later use.
 
 # The Basics
-- [ ] Research how to use Python code to create asthetic titles and cover letters for each story topic.
+- [ ] Research how to use Python code to create colorful titles and entry points.
 - [ ] Create Python code file.
 - [ ] Create title pages for each story topic.
 - [ ] Write story topics in the python file.
