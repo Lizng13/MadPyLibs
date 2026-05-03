@@ -36,8 +36,34 @@ def the_heist():
 
     story = f"\nIt was {time_of_day} when MadPyLibs pulled up to the {building} in a stolen {vehicle} wearing nothing but a {article_of_clothing} and a {adjective1} smile. The plan was simple: steal the world's largest {food}, fence it to a {nationality} {occupation} named {ridiculous_name}, and be in {exotic_city} by {day_of_week}. Everything went perfectly until a {animal} showed up armed with a {kitchen_utensil}. MadPyLibs looked it dead in the {body_part} and said, \"Not today, {insult}.\" Then they {verb}-ed into the sunset."
 
-    print(Style.BRIGHT + Back.YELLOW + "\n🎬 YOUR HEIST STORY 🎬\n" + Style.RESET_ALL)
+    print(Style.BRIGHT + Back.YELLOW + "\nYOUR HEIST STORY \n" + Style.RESET_ALL)
     print(Fore.LIGHTYELLOW_EX + story + Style.RESET_ALL)
+    input(Fore.MAGENTA + "Press Enter to continue..." + Style.RESET_ALL)  
+
+def the_dating_profile():
+    """The Dating Profile Mad Lib story"""
+    print(Fore.LIGHTYELLOW_EX + Style.BRIGHT + "\n--- The Dating Profile: Helping You FindLove ---\n" + Style.RESET_ALL)
+    
+    username = get_input("Name: ")
+    age = get_input("Age (number): ")
+    height_num = get_input("Height (number): ")
+    unit = get_input("Unit of Measurement (ft, cm, etc): ")
+    noun = get_input("Noun: ")
+    verb1 = get_input("Verb: ")
+    plural_noun = get_input("Plural Noun: ")
+    adjective1 = get_input("Adjective: ")
+    adjective2 = get_input("Adjective: ")
+    num_pets = get_input("Number: ")
+    animal = get_input("Animal: ")
+    celebrity = get_input("Celebrity: ")
+    weird_food = get_input("Weird Food: ")
+    verb2 = get_input("Verb: ")
+
+    story = f"\nUsername: {username} \nAge: {age}\nHeight: {height_num} {unit}\n\nBio: I enjoy long walks on the {noun}, {verb1}-ing competitively, and collecting rare {plural_noun}. My friends describe me as \"{adjective1}, but in a {adjective2} way.\" Looking for someone who won't judge me for my {num_pets} pet {animal}s or my obsession with {celebrity}. Must love {weird_food}. Swipe left if you can't handle someone who {verb2}s at the dinner table. IYKYK."
+
+    print(Style.BRIGHT + Back.MAGENTA + "YOUR DATING PROFILE" + Style.RESET_ALL)
+    print(Fore.LIGHTMAGENTA_EX + story + Style.RESET_ALL)
+    input(Fore.MAGENTA + "Press Enter to continue..." + Style.RESET_ALL)    
 
 def main():
     while True:
