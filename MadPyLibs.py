@@ -37,12 +37,12 @@ def the_heist():
     story = f"\nIt was {time_of_day} when MadPyLibs pulled up to the {building} in a stolen {vehicle} wearing nothing but a {article_of_clothing} and a {adjective1} smile. The plan was simple: steal the world's largest {food}, fence it to a {nationality} {occupation} named {ridiculous_name}, and be in {exotic_city} by {day_of_week}. Everything went perfectly until a {animal} showed up armed with a {kitchen_utensil}. MadPyLibs looked it dead in the {body_part} and said, \"Not today, {insult}.\" Then they {verb}-ed into the sunset."
 
     print(Style.BRIGHT + Back.YELLOW + "\nYOUR HEIST STORY \n" + Style.RESET_ALL)
-    print(Fore.LIGHTYELLOW_EX + story + Style.RESET_ALL)
+    print(Fore.LIGHTYELLOW + story + Style.RESET_ALL)
     input(Fore.MAGENTA + "Press Enter to continue..." + Style.RESET_ALL)  
 
 def the_dating_profile():
     """The Dating Profile Mad Lib story"""
-    print(Fore.LIGHTYELLOW_EX + Style.BRIGHT + "\n--- The Dating Profile: Helping You FindLove ---\n" + Style.RESET_ALL)
+    print(Fore.PINK + Style.BRIGHT + "\n--- The Dating Profile: Helping You FindLove ---\n" + Style.RESET_ALL)
     
     username = get_input("Name: ")
     age = get_input("Age (number): ")
@@ -62,8 +62,36 @@ def the_dating_profile():
     story = f"\nUsername: {username} \nAge: {age}\nHeight: {height_num} {unit}\n\nBio: I enjoy long walks on the {noun}, {verb1}-ing competitively, and collecting rare {plural_noun}. My friends describe me as \"{adjective1}, but in a {adjective2} way.\" Looking for someone who won't judge me for my {num_pets} pet {animal}s or my obsession with {celebrity}. Must love {weird_food}. Swipe left if you can't handle someone who {verb2}s at the dinner table. IYKYK."
 
     print(Style.BRIGHT + Back.MAGENTA + "YOUR DATING PROFILE" + Style.RESET_ALL)
-    print(Fore.LIGHTMAGENTA_EX + story + Style.RESET_ALL)
+    print(Fore.LIGHTMAGENTA + story + Style.RESET_ALL)
     input(Fore.MAGENTA + "Press Enter to continue..." + Style.RESET_ALL)    
+
+def the_wilderness_survival():
+    """The Wilderness Survival Documentary Mad Lib story"""
+    print(Fore.GREEN + Style.BRIGHT + "\n--- The Wilderness Survival Documentary ---\n" + Style.RESET_ALL)
+    
+    day_num = get_input("Day Number: ")
+    gross_food = get_input("Gross Food: ")
+    noun1 = get_input("Noun: ")
+    random_object = get_input("Random Object: ")
+    feet_of = get_input("Number (feet of material): ")
+    material = get_input("Material: ")
+    animal1 = get_input("Animal: ")
+    adjective1 = get_input("Adjective: ")
+    adjective2 = get_input("Adjective (emotion): ")
+    num_days = get_input("Number (days survived): ")
+    place = get_input("Place: ")
+    object1 = get_input("Object: ")
+    day_num2 = get_input("Day Number (rescue day): ")
+    adverb = get_input("Adverb: ")
+    verb = get_input("Verb: ")
+    num_emmys = get_input("Number (Emmys): ")
+
+    story = f"\n[Narrator voice]: Day {day_num}. MadPyLibs has not eaten since Tuesday, subsisting only on {gross_food} and sheer {noun1}. Using only a {random_object} and {feet_of} feet of {material}, they constructed a shelter shaped like a {animal1}. \"I'm not {adjective1},\" MadPyLibs told the camera, visibly {adjective2}. \"I once survived {num_days} days in a {place} with nothing but a {object1} and a dream.\" On day {day_num2}, a rescue helicopter arrived. MadPyLibs waved it off. \"I'm {adverb} fine,\" they said, {verb}-ing aggressively into the wilderness. The documentary won {num_emmys} Emmys."
+
+    print(Style.BRIGHT + Back.GREEN + "YOUR SURVIVAL STORY" + Style.RESET_ALL)
+    print(Fore.GREEN + story + Style.RESET_ALL)
+    input(Fore.MAGENTA + "Press Enter to continue..." + Style.RESET_ALL)
+
 
 def main():
     while True:
@@ -76,7 +104,7 @@ def main():
         elif choice == "3":
             the_wilderness_survival()
         elif choice == "4":
-            print(Fore.CYAN + Style.BRIGHT + "\nThanks for playing! Goodbye! 👋\n" + Style.RESET_ALL)
+            print(Fore.CYAN + Style.BRIGHT + "\nThanks for playing! Goodbye!\n" + Style.RESET_ALL)
             break
         else:
             print(Fore.RED + Style.BRIGHT + "Invalid choice. Please try again." + Style.RESET_ALL)
