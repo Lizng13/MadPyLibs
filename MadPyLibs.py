@@ -42,7 +42,7 @@ def the_heist():
 
 def the_dating_profile():
     """The Dating Profile Mad Lib story"""
-    print(Fore.PINK + Style.BRIGHT + "\n--- The Dating Profile: Helping You FindLove ---\n" + Style.RESET_ALL)
+    print(Fore.PINK + Style.BRIGHT + "\n--- The Dating Profile: Helping You Find Love ---\n" + Style.RESET_ALL)
     
     username = get_input("Name: ")
     age = get_input("Age (number): ")
