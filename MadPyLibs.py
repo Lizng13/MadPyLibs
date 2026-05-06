@@ -66,10 +66,11 @@ def the_dating_profile():
     input(Fore.MAGENTA + "Press Enter to continue..." + Style.RESET_ALL)    
 
 def the_wilderness_survival():
-    """The Wilderness Survival Documentary Mad Lib story"""
+    """The Wilderness Survival Mad Lib story"""
     print(Fore.GREEN + Style.BRIGHT + "\n--- The Wilderness Survival Documentary ---\n" + Style.RESET_ALL)
     
     day_num = get_input("Day Number: ")
+    your_name = get_input("Your Name: ")
     gross_food = get_input("Gross Food: ")
     noun1 = get_input("Noun: ")
     random_object = get_input("Random Object: ")
@@ -86,7 +87,7 @@ def the_wilderness_survival():
     verb = get_input("Verb: ")
     num_emmys = get_input("Number (Emmys): ")
 
-    story = f"\n[Narrator voice]: Day {day_num}. MadPyLibs has not eaten since Tuesday, subsisting only on {gross_food} and sheer {noun1}. Using only a {random_object} and {feet_of} feet of {material}, they constructed a shelter shaped like a {animal1}. \"I'm not {adjective1},\" MadPyLibs told the camera, visibly {adjective2}. \"I once survived {num_days} days in a {place} with nothing but a {object1} and a dream.\" On day {day_num2}, a rescue helicopter arrived. MadPyLibs waved it off. \"I'm {adverb} fine,\" they said, {verb}-ing aggressively into the wilderness. The documentary won {num_emmys} Emmys."
+    story = f"\n[Narrator voice]: Day {day_num}. {your_name} has not eaten since Tuesday, subsisting only on {gross_food} and sheer {noun1}. Using only a {random_object} and {feet_of} feet of {material}, they constructed a shelter shaped like a {animal1}. \"I'm not {adjective1},\" {your_name} told the camera, visibly {adjective2}. \"I once survived {num_days} days in a {place} with nothing but a {object1} and a dream.\" On day {day_num2}, a rescue helicopter arrived. {your_name} waved it off. \"I'm {adverb} fine,\" they said, {verb}-ing aggressively into the wilderness. The documentary won {num_emmys} Emmys."
 
     print(Style.BRIGHT + Back.GREEN + "YOUR SURVIVAL STORY" + Style.RESET_ALL)
     print(Fore.GREEN + story + Style.RESET_ALL)
