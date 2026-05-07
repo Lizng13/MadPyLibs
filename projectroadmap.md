@@ -10,7 +10,7 @@
 - [X] Research how to use Python code to create colorful titles and entry points.
 - [X] Create Python code file.
 - [X] Create title names for each story topic.
-- [ ] Write story topics in the python file.
-- [ ] Create clever entry questions for story blanks.
+- [X] Write story topics in the python file.
+- [X] Create clever entry questions for story blanks.
 - [X] Make sure to commit 2-3 changes in week 2 of project work.
 - [X] Make sure to update to KSU IS Github for week 2 of project work.
