@@ -37,12 +37,12 @@ def the_heist():
     story = f"\nIt was {time_of_day} when MadPyLibs pulled up to the {building} in a stolen {vehicle} wearing nothing but a {article_of_clothing} and a {adjective1} smile. The plan was simple: steal the world's largest {food}, fence it to a {nationality} {occupation} named {ridiculous_name}, and be in {exotic_city} by {day_of_week}. Everything went perfectly until a {animal} showed up armed with a {kitchen_utensil}. MadPyLibs looked it dead in the {body_part} and said, \"Not today, {insult}.\" Then they {verb}-ed into the sunset."
 
     print(Style.BRIGHT + Back.YELLOW + "\nYOUR HEIST STORY \n" + Style.RESET_ALL)
-    print(Fore.LIGHTYELLOW + story + Style.RESET_ALL)
+    print(Fore.LIGHTYELLOW_EX + story + Style.RESET_ALL)
     input(Fore.MAGENTA + "Press Enter to continue..." + Style.RESET_ALL)  
 
 def the_dating_profile():
     """The Dating Profile Mad Lib story"""
-    print(Fore.PINK + Style.BRIGHT + "\n--- The Dating Profile: Helping You Find Love ---\n" + Style.RESET_ALL)
+    print(Fore.MAGENTA + Style.BRIGHT + "\n--- The Dating Profile: Helping You Find Love ---\n" + Style.RESET_ALL)
     
     username = get_input("Name: ")
     age = get_input("Age (number): ")
@@ -62,7 +62,7 @@ def the_dating_profile():
     story = f"\nUsername: {username} \nAge: {age}\nHeight: {height_num} {unit}\n\nBio: I enjoy long walks on the {noun}, {verb1}-ing competitively, and collecting rare {plural_noun}. My friends describe me as \"{adjective1}, but in a {adjective2} way.\" Looking for someone who won't judge me for my {num_pets} pet {animal}s or my obsession with {celebrity}. Must love {weird_food}. Swipe left if you can't handle someone who {verb2}s at the dinner table. IYKYK."
 
     print(Style.BRIGHT + Back.MAGENTA + "YOUR DATING PROFILE" + Style.RESET_ALL)
-    print(Fore.LIGHTMAGENTA + story + Style.RESET_ALL)
+    print(Fore.MAGENTA + story + Style.RESET_ALL)
     input(Fore.MAGENTA + "Press Enter to continue..." + Style.RESET_ALL)    
 
 def the_wilderness_survival():
